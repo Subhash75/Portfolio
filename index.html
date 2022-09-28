@@ -6,36 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
-      <div class="sidebar1">1</div>
-      <div class="sidebar2">2</div>
+      <div class="sidebar1">
+        <a href="https://github.com/Subhash75" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/subhashghosh90">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <div class="sidebar2">
+        <p>subhash.ghosh90@gmail.com</p>
+      </div>
       <div class="body">
         <header>
-          <p class="first-icon">icon</p>
+          <p class="first-icon"><i class="fa-solid fa-s"></i></p>
           <nav>
             <ul>
               <li>
                 <a href="#about-me"><span>01.</span>About</a>
               </li>
               <li>
-                <a href="#"><span>02.</span>Experience</a>
+                <a href="#projects"><span>02.</span>Projects</a>
               </li>
               <li>
-                <a href="#"><span>03.</span>Work</a>
+                <a href="#work"><span>03.</span>Mini Work</a>
               </li>
               <li>
-                <a href="#"><span>04.</span>Contact</a>
+                <a href="#contact"><span>04.</span>Contact</a>
               </li>
               <li>
-                <a href="#">Resume</a>
+                <a href="ResumeCV.pdf" target="_blank">Resume</a>
               </li>
             </ul>
           </nav>
-          <p class="second-icon">icon</p>
+          <p class="second-icon"><i class="fa-solid fa-bars"></i></p>
         </header>
-        <section class="first-section">
+        <section class="first-section" data-aos="slide-up" data-aos-once="true">
           <p class="my-name">
             Hi, my name is <br /><span>Subhash Ghosh.</span>
           </p>
@@ -49,35 +63,36 @@
             opportunity to work in an environment that will help me progress
             into a front-end role.
           </p>
-          <a href="#" class="check-out-my-course">Check out my course</a>
+          <a href="mailto:subhash.ghosh90@gmail.com" class="check-out-my-course">Say Hello !</a>
         </section>
-        <section class="second-section">
+        <section
+          class="second-section"
+          data-aos="slide-up"
+          data-aos-once="true"
+        >
           <div class="about-info">
             <h1 id="about-me" class="title">
               <span class="title-number"> 01.</span> About Me
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque provident a amet fuga omnis repellat sapiente ut
-              commodi adipisci consequuntur mollitia pariatur, neque enim vel
-              illum consectetur distinctio magni vero aliquam beatae praesentium
-              quasi facere eligendi! Excepturi, doloremque! Illum, vitae?
+              Hello, my name is Subhash Ghosh and I wish to become a successful
+              developer. Right now I dont have much industry knowledge but
+              atleast have some knowledge about how the web development world
+              works. I am very passionate about UI development and design.
             </p>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-              officiis facilis mollitia. Praesentium consequatur sequi
-              reprehenderit mollitia quae maiores natus vel, sed enim nisi in
-              sapiente molestias ullam fuga nihil? Architecto animi totam rerum
-              laudantium quo explicabo obcaecati officia quisquam.
+              As of now, I'm ok with React JS and Javascript(like building
+              logics) and also love fixing CSS bugs using Browser development
+              tools and also have some knowledge about jQuery and Bootstrap
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum
-              voluptate sit dolorem quae recusandae omnis nobis corrupti aperiam
-              sunt.
+              Right now, projects that I have mentioned focuses mainly on
+              dynamic design, responsive web designs, single page
+              applications(SPAs) and UI development using flexbox layouts.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
-              ipsa.
+              I have never implemented Java practically but I have knowledge of
+              how it works and its OOPS concepts.
             </p>
             <ul>
               <li>JavaScript</li>
@@ -85,178 +100,186 @@
               <li>React JS</li>
               <li>SCSS</li>
               <li>Java</li>
+              <li>GIT</li>
             </ul>
           </div>
           <div class="img">
-            <img
-              src="https://brittanychiang.com/static/30a645f7db6038f83287d0c6042d3b2b/f9526/me.avif"
-              alt="my-image"
-            />
+            <img src="images/myImage1.jpeg" alt="my-image" />
           </div>
         </section>
-        <section class="third-section">
+        <section id="projects" class="third-section" data-aos="slide-up" data-aos-once="true">
           <h1 class="title">
             <span class="title-number">02.</span> My Projects
           </h1>
           <div class="project-body">
             <div class="project-info">
-              <h1>HackerNews Clone</h1>
+              <h1>Shopping Cart</h1>
+              <p>
+                A React Shopping Cart project that allows users to browse
+                through various products and allows them to add the products to
+                the cart which can be viewed later and can also have access to
+                the total amount.
+              </p>
+              <ul>
+                <li>React JS</li>
+                <li>VS-Code</li>
+                <li>HTML/ CSS</li>
+              </ul>
+              <div class="buttons">
+                <a
+                  href="https://github.com/Subhash75/Shopping-Cart-React"
+                  target="_blank"
+                  >Github</a
+                >
+                <a href="https://shopppingcart.netlify.app" target="_blank"
+                  >Live</a
+                >
+              </div>
+            </div>
+            <div class="project-img">
+              <img src="images/shoppingapp.png" alt="image" />
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-info">
+              <h1>Hotel Landing</h1>
+              <p>
+                A Restaurant Landing Page with friendly interface that shows
+                dishes based on particular category.<br /><br />
+              </p>
+              <ul>
+                <li>HTML/ CSS</li>
+                <li>Responsive</li>
+                <li>User Friendly</li>
+              </ul>
+              <div class="buttons">
+                <a
+                  href="https://github.com/Subhash75/Food-Site-HTML-CSS"
+                  target="_blank"
+                  >Github</a
+                >
+                <a href="https://signaturecuisine.netlify.app" target="_blank"
+                  >Live</a
+                >
+              </div>
+            </div>
+            <div class="project-img">
+              <img src="images/HotelLanding.png" alt="image" />
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-info">
+              <h1>Hackernews Clone</h1>
               <p>
                 This project allows users to actually fetch latest news that is
-                present on the actual Hackernews website. <br /><br />
+                present on the actual Hackernews website(using API). <br /><br />
                 Implemented most of the features of the original website
               </p>
               <ul>
                 <li>React JS</li>
                 <li>Fetch API</li>
-                <li>Responsiveness</li>
-                <li>VS-Code</li>
+                <li>Hackernews API</li>
               </ul>
               <div class="buttons">
-                <button>Github</button>
-                <button>Live</button>
+                <a
+                  href="https://github.com/Subhash75/React-HackerNews-Clone"
+                  target="_blank"
+                  >Github</a
+                >
+                <a href="https://hackernewsclonee.netlify.app" target="_blank"
+                  >Live</a
+                >
               </div>
             </div>
             <div class="project-img">
-              <img
-                src="https://brittanychiang.com/static/30a645f7db6038f83287d0c6042d3b2b/f9526/me.avif"
-                alt="image"
-              />
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-info">
-              <h1>Halcyon Theme</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                assumenda fugit consequatur eos perferendis tempore natus eum
-                vitae pariatur sapiente.
-              </p>
-              <ul>
-                <li>Home</li>
-                <li>News</li>
-                <li>About</li>
-                <li>Contact</li>
-              </ul>
-              <div class="buttons">
-                <button>Github</button>
-                <button>Live</button>
-              </div>
-            </div>
-            <div class="project-img">
-              <img
-                src="https://brittanychiang.com/static/30a645f7db6038f83287d0c6042d3b2b/f9526/me.avif"
-                alt="image"
-              />
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-info">
-              <h1>Halcyon Theme</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                assumenda fugit consequatur eos perferendis tempore natus eum
-                vitae pariatur sapiente.
-              </p>
-              <ul>
-                <li>Home</li>
-                <li>News</li>
-                <li>About</li>
-                <li>Contact</li>
-              </ul>
-              <div class="buttons">
-                <button>Github</button>
-                <button>Live</button>
-              </div>
-            </div>
-            <div class="project-img">
-              <img
-                src="https://brittanychiang.com/static/30a645f7db6038f83287d0c6042d3b2b/f9526/me.avif"
-                alt="image"
-              />
+              <img src="images/hackernews.png" alt="image" />
             </div>
           </div>
         </section>
-        <section class="fourth-section">
+        <section id="work"
+          class="fourth-section"
+          data-aos="slide-up"
+          data-aos-once="true"
+        >
           <h1 class="title">Other Projects</h1>
           <div class="otherproject-body">
-            <p>icon</p>
             <h3>Weather App</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-              adipisci.
+              Project is not yet complete
             </p>
-            <ul>
+            <!-- <ul>
               <li>home</li>
               <li>news</li>
               <li>contact</li>
               <li>about</li>
-            </ul>
+            </ul> -->
             <div class="buttons">
-              <button>Github</button>
-              <button>Link</button>
+              <a href="javascript:void(0)" class="not-available">Github</a>
+              <a href="javascript:void(0)" class="not-available">Link</a>
             </div>
           </div>
           <div class="otherproject-body">
-            <p>icon</p>
             <h3>TO-DO App</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-              adipisci.
+              A To-do application which lets user to add/ delete tasks and also lets them to set date and time so that they do not miss the deadline.
             </p>
             <ul>
-              <li>home</li>
-              <li>news</li>
-              <li>contact</li>
-              <li>about</li>
+              <li>React JS</li>
+              <li>HTML/CSS/JS</li>
+              <li>React date-picker</li>
+             
             </ul>
             <div class="buttons">
-              <button>Github</button>
-              <button>Link</button>
+              <a
+                href="https://github.com/Subhash75/To---Do-React-App"
+                 target="_blank"
+                >Github</a
+              >
+              <a href="https://www.tuuduu.netlify.app"   target="_blank">Link</a>
             </div>
           </div>
           <div class="otherproject-body">
-            <p>icon</p>
-            <h3>Calculator</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-              adipisci.
-            </p>
-            <ul>
-              <li>home</li>
-              <li>news</li>
-              <li>contact</li>
-              <li>about</li>
-            </ul>
-            <div class="buttons">
-              <button>Github</button>
-              <button>Link</button>
-            </div>
-          </div>
-          <div class="otherproject-body">
-            <p>icon</p>
             <h3>TIC-TAC Game</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-              adipisci.
+             Project not complete but you can still view the source code
             </p>
             <ul>
+              <li>React JS</li>
+              <li>React Docs</li>
+            </ul>
+            <div class="buttons">
+              <a href="https://github.com/Subhash75/Tic-Tac-React-App" >Github</a>
+              <a href="javascript:void(0)" class="not-available">Link</a>
+            </div>
+          </div>
+          <div class="otherproject-body">
+            <h3>Calculator</h3>
+            <p>
+             Project not completed yet
+            </p>
+            <!-- <ul>
               <li>home</li>
               <li>news</li>
               <li>contact</li>
               <li>about</li>
-            </ul>
+            </ul> -->
             <div class="buttons">
-              <button>Github</button>
-              <button>Link</button>
+              <a href="javascript:void(0)" class="not-available">Github</a>
+              <a href="javascript:void(0)" class="not-available">Link</a>
             </div>
           </div>
         </section>
-        <section class="fifth-section">
-          <h1 class="title"><span class="title-number">04. </span>What's Next</h1>
+        <section id="contact" class="fifth-section" data-aos="slide-up" data-aos-once="true">
+          <h1 class="title">
+            <span class="title-number">04. </span>What's Next
+          </h1>
           <p>Get in Touch</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore expedita in optio cupiditate et quibusdam, ducimus nisi odio modi maxime nostrum magnam voluptatibus laboriosam neque!</p>
-          <button>Send me a message :-)</button>
+          <p>
+            I'm looking for new opportunities and seeking to work in an
+            environment where I can enhance my development skills and in return
+            I'll be a good addition to your wonderful team.
+          </p>
+          <a href="mailto:subhash.ghosh90@gmail.com">Send me a message :-)</a>
         </section>
         <footer>
           <p>Click to view source on Github</p>
@@ -266,5 +289,9 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

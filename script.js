@@ -1,10 +1,8 @@
-// adding mobile-view class was overwriting initial css rules so decided on using style object.
-
 let isNavBarOpen = false;
 const myInterest = [
   "Front End Developer",
   "React Developer",
-  "Web Designer",
+  "Javascript Developer",
   "Web Developer",
 ];
 
@@ -54,10 +52,36 @@ const showNavBar = function () {
 };
 document.querySelector(".second-icon").addEventListener("click", showNavBar);
 
-// let i = 0;
-// setInterval(function () {
-//   if (i === myInterest.length) i = 0;
-//   document.querySelector(".my-interest-span").textContent = myInterest[i];
-//   i++;
-// }, 2000);
+let links = document.querySelectorAll("header a");
+let j = 0;
+while (j < links.length) {
+  links[j].addEventListener("click", function () {
+    if (window.innerWidth <= 768) {
+      console.log("clclcl");
+      this.parentNode.parentNode.parentNode.style.display = "none";
+      this.parentNode.parentNode.parentNode.classList.remove("mobile-view");
+      this.parentNode.parentNode.parentNode.parentNode.parentNode.style.height =
+        "auto";
+      this.parentNode.parentNode.parentNode.parentNode.parentNode.style.overflow =
+        "visible";
+    }
+  });
+  j++;
+}
 
+document
+  .querySelector("p.second-icon i")
+  .addEventListener("click", function (e) {
+    if (e.target.className === "fa-solid fa-x") {
+      e.target.className = "fa-solid fa-bars";
+    } else {
+      e.target.className = "fa-solid fa-x";
+    }
+  });
+
+let i = 0;
+setInterval(function () {
+  if (i === myInterest.length) i = 0;
+  document.querySelector(".my-interest-span").textContent = myInterest[i];
+  i++;
+}, 2000);

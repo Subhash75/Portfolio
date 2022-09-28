@@ -25,20 +25,49 @@ div.container {
 
 div.sidebar1 {
   min-height: 100%;
-  background-color: red;
-  border: solid;
+  color: white;
+  background-color: rgba(10, 25, 47, 1);
+  border: solid transparent;
   width: 5%;
   position: fixed;
   left: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+div.sidebar1 a {
+  text-decoration: none;
+}
+
+div.sidebar1 a:visited, div.sidebar1 a:active {
+  color: white;
+}
+
+div.sidebar1 i {
+  font-size: 1.5em;
+  margin: 1em 0;
 }
 
 div.sidebar2 {
   min-height: 100%;
-  background-color: green;
-  border: solid;
+  color: white;
+  background-color: rgba(10, 25, 47, 1);
+  border: solid transparent;
   width: 5%;
   position: fixed;
   right: 0;
+}
+
+div.sidebar2 p {
+  letter-spacing: 1px;
+  width: max-content;
+  transform-origin: top left;
+  position: absolute;
+  left: 40px;
+  top: 30%;
+  transform:  rotate(90deg);
 }
 
 div.body {
@@ -52,7 +81,6 @@ div.body {
 
 div.body > header {
   background-color: rgba(10, 25, 47, 0.8);
-  border: solid;
   padding: 1.5em 0;
   position: relative;
   display: flex;
@@ -62,8 +90,17 @@ div.body > header {
 }
 
 div.body > header p.first-icon {
-  color: white;
+  color: rgba(98, 251, 215, 1);
+  font-size: 1.75em;
   margin-left: 1em;
+  border: 5px solid;
+  padding: .3rem;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+div.body > header p.second-icon i {
+  color: rgba(98, 251, 215, 1);
+  font-size: 2em;
 }
 
 nav.mobile-view {
@@ -187,7 +224,8 @@ span.my-interest-span {
   position: absolute;
   inset: 0;
   background-color: rgba(10, 25, 47, 1);
-  /* animation: typeeffect 1s steps(13, start) forwards infinite, twinkle 500ms steps(13, start) forwards infinite; */
+  animation: typeeffect 1s steps(13, start) forwards infinite,
+    twinkle 500ms steps(13, start) forwards infinite;
   animation-direction: alternate;
 }
 
@@ -331,7 +369,6 @@ section.third-section div.project-body:nth-of-type(odd) {
 
 section.third-section div.project-info {
   flex: 0 0 60%;
-  padding: 1em;
   position: relative;
   z-index: 1;
 }
@@ -366,26 +403,41 @@ section div.buttons {
   justify-content: center;
 }
 
-section div.buttons button {
+section div.buttons a {
+  display: inline-block;
+  text-decoration: none;
   color: white;
   background-color: transparent;
   font-size: 1.2em;
-  font-weight: 700;
+  font-weight: 900;
   border: none;
   border-radius: 5px;
   padding: 0.5em 1em;
   margin: 0 0 0 1em;
+  position: relative;
 }
 
-section div.buttons button:hover {
+section div.buttons a.not-available:hover::before {
+  content: 'NOT FINISHED';
+  font-size: 0.8em;
+  width: max-content;
+  position: absolute;
+  bottom: 105%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section div.buttons a:hover {
   background-color: rgba(98, 251, 215, 1);
 }
 
 section.third-section div.project-img {
   align-self: center;
+  height: 60vh;
   flex: 0 0 40%;
   position: relative;
   z-index: 0;
+  display: flex;
 }
 
 section.third-section div.project-img::before {
@@ -404,6 +456,8 @@ section.third-section div.project-img img {
   opacity: 0.8;
   width: 1000px;
   max-width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
   margin: auto;
 }
@@ -503,7 +557,9 @@ section.fifth-section p:last-of-type {
   margin: 1em 0;
 }
 
-section.fifth-section button {
+section.fifth-section a {
+  display: inline-block;
+  text-decoration: none;
   color: rgba(98, 251, 215, 1);
   background-color: transparent;
   border: solid;
@@ -514,7 +570,7 @@ section.fifth-section button {
   transform: translateX(-50%);
 }
 
-section.fifth-section button:hover {
+section.fifth-section a:hover {
   background-color: rgba(98, 251, 215, 0.1);
 }
 
@@ -525,7 +581,6 @@ footer {
   text-align: center;
   position: relative;
 }
-
 
 footer p:first-of-type {
   color: rgba(98, 251, 215, 1);
@@ -547,16 +602,21 @@ footer:hover p:first-of-type {
   transform: translateX(-50%) scaleY(1);
 }
 
-
 footer p:first-of-type::before {
-  content: '';
+  content: "";
   border: 5px solid transparent;
   border-top: 10px solid rgba(98, 251, 215, 1);
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-} 
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  html {
+    font-size: 16px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   html {
