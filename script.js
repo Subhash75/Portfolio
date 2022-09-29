@@ -57,13 +57,13 @@ let j = 0;
 while (j < links.length) {
   links[j].addEventListener("click", function () {
     if (window.innerWidth <= 768) {
-      console.log("clclcl");
       this.parentNode.parentNode.parentNode.style.display = "none";
       this.parentNode.parentNode.parentNode.classList.remove("mobile-view");
       this.parentNode.parentNode.parentNode.parentNode.parentNode.style.height =
         "auto";
       this.parentNode.parentNode.parentNode.parentNode.parentNode.style.overflow =
         "visible";
+        this.parentNode.parentNode.parentNode.parentNode.children[2].children[0].className = "fa-solid fa-bars"
     }
   });
   j++;
