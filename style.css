@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   font-size: 20px;
 }
@@ -15,7 +20,7 @@ ul {
 }
 
 div.container {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 100%;
   height: 100vh;
   min-height: 100vh;
@@ -618,27 +623,39 @@ footer a:active {
   color: rgb(136, 146, 176);
 }
 
-@media screen and (min-width: 769px) and (max-width: 1000px) {
+
+
+@media screen and (max-width: 124px) {
+  html {
+    font-size: 5px;
+  }
+}
+@media screen and (min-width: 125px) and (max-width: 274px) {
+  html {
+    font-size: 8px;
+  }
+  p.my-name span {
+    font-size: 1.5em;
+  }
+  p.my-interest {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 275px) and (max-width: 500px) {
+  html {
+    font-size: 13px;
+  }
+  p.my-name span {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 768px) {
   html {
     font-size: 16px;
   }
 }
-
-@media (orientation: landscape) {
-
-}
-
-@media screen and (max-width: 500px) {
-  html {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 768px) and (orientation: portrait){
-  html {
-    font-size: 16px;
-  }
-
+@media screen and (max-width: 768px) {
   div.body {
     left: 0;
     right: 0;
@@ -723,5 +740,11 @@ footer a:active {
   }
   section.fourth-section div.otherproject-body {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  html {
+    font-size: 16px;
   }
 }
