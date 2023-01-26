@@ -41,64 +41,6 @@ div.container {
   position: relative;
 }
 
-/* .sidebar {
-  min-height: 100%;
-  background-color: rgba(10, 25, 47, 1);
-  width: 5%;
-  position: fixed;
-}
-
-div.left-sidebar {
-  min-height: 100%;
-  /* color: white; */
-  /* background-color: rgba(10, 25, 47, 1); */
-  /* border: solid transparent; */
-  /* width: 5%;
-  position: fixed;
-  flex-direction: column; */
-  /* left: 0; */
-  /* display: flex; */
-  /* flex-flow: column wrap; */
-  /* justify-content: center; */
-  /* align-items: center; */
-/* } */
-
-/* div.left-sidebar a {
-  text-decoration: none;
-} */
-/*
-div.left-sidebar a:visited,
-div.left-sidebar a:active {
-  color: white;
-}
-
-div.left-sidebar i {
-  font-size: 1.5em;
-  margin: 1em 0;
-}
-
-div.right-sidebar {
-  min-height: 100%;
-  color: white;
-  background-color: rgba(10, 25, 47, 1);
-  border: solid transparent;
-  width: 5%;
-  position: fixed;
-  border: solid transparent;
-  color: white;
-  right: 0;
-}
-
-div.right-sidebar p {
-  letter-spacing: 1px;
-  width: max-content;
-  transform-origin: top left;
-  position: absolute;
-  left: 40px;
-  top: 30%;
-  transform: rotate(90deg);
-} */
-
 div.sidebar1 {
   min-height: 100%;
   color: white;
