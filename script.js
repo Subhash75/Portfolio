@@ -63,7 +63,7 @@ while (j < links.length) {
         "auto";
       this.parentNode.parentNode.parentNode.parentNode.parentNode.style.overflow =
         "visible";
-        this.parentNode.parentNode.parentNode.parentNode.children[2].children[0].className = "fa-solid fa-bars"
+      this.parentNode.parentNode.parentNode.parentNode.children[2].children[0].className = "fa-solid fa-bars"
     }
   });
   j++;
@@ -79,9 +79,9 @@ document
     }
   });
 
-let i = 0;
-setInterval(function () {
-  if (i === myInterest.length) i = 0;
-  document.querySelector(".my-interest-span").textContent = myInterest[i];
-  i++;
-}, 2000);
+// let i = 0;
+// setInterval(function () {
+//   if (i === myInterest.length) i = 0;
+//   document.querySelector(".my-interest-span").textContent = myInterest[i];
+//   i++;
+// }, 2000);

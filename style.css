@@ -238,14 +238,14 @@ span.my-interest-span {
 }
 
 .my-interest-span::before {
-  content: "";
+  /* content: "";
   border-left: solid white;
   position: absolute;
   inset: 0;
-  background-color: rgba(10, 25, 47, 1);
-  animation: typeeffect 1s steps(13, start) forwards infinite,
+  background-color: rgba(10, 25, 47, 1); */
+  /* animation: typeeffect 1s steps(13, start) forwards infinite,
     twinkle 500ms steps(13, start) forwards infinite;
-  animation-direction: alternate;
+  animation-direction: alternate; */
 }
 
 @keyframes twinkle {
